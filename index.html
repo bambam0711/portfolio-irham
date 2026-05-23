@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="google-site-verification" content="-ge1FH1yGr9zHjlrLEGyGoDM4Q_6PEEafGW7J6IWxK0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio Irham Nursyafizan — developer muda dari Malaysia yang pakar dalam web development dan AI. Pelajar Matrikulasi Johor, memohon UKM FTSM 2026.">
+  <meta name="keywords" content="Irham Nursyafizan, bambam, portfolio, web developer, AI, Malaysia, UKM, FTSM">
+  <meta name="author" content="Irham Nursyafizan">
+  <meta property="og:title" content="bambam — Portfolio">
+  <meta property="og:description" content="Web developer & AI enthusiast dari Malaysia.">
+  <meta property="og:url" content="https://portfolio-bambam.netlify.app">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://portfolio-bambam.netlify.app/assets/og-image.png">
+  <meta property="og:image:alt" content="bambam.dev — Irham Nursyafizan portfolio preview">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="bambam — Portfolio">
+  <meta name="twitter:description" content="Web developer & AI enthusiast dari Malaysia.">
+  <meta name="twitter:image" content="https://portfolio-bambam.netlify.app/assets/og-image.png">
+  <meta name="twitter:image:alt" content="bambam.dev — Irham Nursyafizan portfolio preview">
+  <title>bambam — Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav id="navbar">
+  <a class="nav-logo" href="#hero">bambam.dev</a>
+  <button class="nav-menu-btn" type="button" onclick="toggleMobileNav()" aria-label="Toggle navigation" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-links" id="navLinks">
+    <a class="nav-link" href="#about" data-en="About" data-ms="Tentang">Tentang</a>
+    <a class="nav-link" href="#skills" data-en="Skills" data-ms="Kemahiran">Kemahiran</a>
+    <a class="nav-link" href="#projects" data-en="Projects" data-ms="Projek">Projek</a>
+    <a class="nav-link" href="#achievements" data-en="Achievements" data-ms="Pencapaian">Pencapaian</a>
+    <a class="nav-link" href="#resume" data-en="Resume" data-ms="Resume">Resume</a>
+    <a class="nav-link" href="#contact" data-en="Contact" data-ms="Hubungi">Hubungi</a>
+  </div>
+  <div class="nav-right">
+    <button class="lang-wrap" id="langToggle" type="button" onclick="toggleLang()" aria-label="Toggle language" aria-pressed="false">
+      <span style="font-size:10px;letter-spacing:0.08em;color:var(--muted);">BM</span>
+      <div class="toggle-track"><div class="toggle-thumb" id="langThumb"></div></div>
+      <span style="font-size:10px;letter-spacing:0.08em;color:var(--muted);">EN</span>
+    </button>
+    <button class="toggle-wrap" id="themeToggle" type="button" onclick="toggleTheme()" aria-label="Toggle theme" aria-pressed="false">
+      <div class="toggle-track"><div class="toggle-thumb" id="thumb"></div></div>
+      <span class="toggle-lbl" id="tlbl">Dark</span>
+    </button>
+  </div>
+</nav>
+
+<!-- ── HERO ── -->
+<section id="hero">
+  <div class="hero-glow"></div>
+  <div class="hero-glow2"></div>
+  <div class="hero-inner">
+    <div>
+      <div class="hero-tag reveal"><span class="hero-dot"></span> <span data-en="Open to opportunities" data-ms="Terbuka kepada peluang">Terbuka kepada peluang</span></div>
+      <h1 class="hero-name hero-builder reveal reveal-delay-1">
+        <span class="hero-static" data-en="I build" data-ms="Aku bina">Aku bina</span>
+        <span class="hero-rotator" aria-label="website, projek IoT dan coding">
+          <span data-en="websites" data-ms="website">website</span>
+          <span data-en="IoT projects" data-ms="projek IoT">projek IoT</span>
+          <span data-en="dashboards" data-ms="dashboard">dashboard</span>
+          <span data-en="code" data-ms="coding">coding</span>
+          <span data-en="automation" data-ms="automasi">automasi</span>
+        </span>
+      </h1>
+      <p class="hero-fullname reveal reveal-delay-2">Irham Nursyafizan bin Ramli</p>
+      <p class="hero-tagline reveal reveal-delay-2" data-en="Student developer focused on web apps, IoT systems, and practical tech projects." data-ms="Student developer yang fokus pada web app, sistem IoT, dan projek teknologi praktikal.">Student developer yang fokus pada web app, sistem IoT, dan projek teknologi praktikal.</p>
+      <div class="hero-btns reveal reveal-delay-3">
+        <a class="btn-primary" href="#projects" data-en="View Projects →" data-ms="Lihat Projek →">Lihat Projek →</a>
+        <a class="btn-ghost" href="#contact" data-en="Get in Touch" data-ms="Hubungi Saya">Hubungi Saya</a>
+        <a class="btn-ghost" id="cvBtn" href="#" target="_blank" rel="noopener" data-en="Download CV" data-ms="Muat Turun CV" style="display:none;">Muat Turun CV</a>
+      </div>
+      <div class="hero-stats reveal reveal-delay-4" aria-label="Portfolio highlights">
+        <div class="hero-stat">
+          <strong>3.93</strong>
+          <span>PNGA</span>
+        </div>
+        <div class="hero-stat">
+          <strong>2026</strong>
+          <span>UKM FTSM</span>
+        </div>
+        <div class="hero-stat">
+          <strong>MY</strong>
+          <span>Malaysia</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-avatar reveal reveal-delay-2">
+      <img src="https://i.ibb.co/HLntLGGf/avatar.jpg" alt="bambam" onerror="this.parentElement.textContent='BAM'">
+    </div>
+  </div>
+</section>
+
+<!-- ── ABOUT ── -->
+<section id="about">
+  <div class="section-tag reveal" data-en="About Me" data-ms="Tentang Saya">Tentang Saya</div>
+  <h2 class="section-title reveal" data-en="Who I <span>Am</span>" data-ms="Siapa <span>Saya</span>">Siapa <span>Saya</span></h2>
+  <p class="section-sub reveal"
+    data-en="Passionate developer from Malaysia with a love for building web experiences and exploring AI."
+    data-ms="Pembangun bersemangat dari Malaysia yang gemar membina pengalaman web dan meneroka dunia AI.">
+    Pembangun bersemangat dari Malaysia yang gemar membina pengalaman web dan meneroka dunia AI.
+  </p>
+
+  <div class="about-layout reveal">
+    <div class="about-copy">
+      <div class="about-kicker" data-en="Student developer" data-ms="Pelajar pembangun">Pelajar pembangun</div>
+      <p
+        data-en="I build clean web experiences while exploring AI, data and small IoT ideas. My focus is simple: learn fast, ship useful things, and turn technical curiosity into work people can actually understand."
+        data-ms="Saya membina pengalaman web yang kemas sambil meneroka AI, data dan idea IoT kecil. Fokus saya mudah: belajar dengan cepat, bina benda yang berguna, dan tukar rasa ingin tahu teknikal kepada hasil yang orang boleh faham.">
+        Saya membina pengalaman web yang kemas sambil meneroka AI, data dan idea IoT kecil. Fokus saya mudah: belajar dengan cepat, bina benda yang berguna, dan tukar rasa ingin tahu teknikal kepada hasil yang orang boleh faham.
+      </p>
+      <div class="about-focus-pills" aria-label="Focus areas">
+        <span>Web</span>
+        <span>AI / Data</span>
+        <span>IoT</span>
+      </div>
+    </div>
+
+    <div class="info-grid about-facts">
+    <div class="info-card" role="button" tabindex="0" onclick="openInfoModal('current')" onkeydown="handleInfoCardKey(event,'current')">
+      <div class="info-label" data-en="Currently" data-ms="Kini">Kini</div>
+      <div class="info-val">Kolej Matrikulasi Johor</div>
+      <div class="info-hint" data-en="Open story" data-ms="Buka cerita">Buka cerita</div>
+    </div>
+    <div class="info-card" role="button" tabindex="0" onclick="openInfoModal('apply')" onkeydown="handleInfoCardKey(event,'apply')">
+      <div class="info-label" data-en="Applying to" data-ms="Memohon ke">Memohon ke</div>
+      <div class="info-val">UKM FTSM 2026</div>
+      <div class="info-hint" data-en="Open story" data-ms="Buka cerita">Buka cerita</div>
+    </div>
+    <div class="info-card" role="button" tabindex="0" onclick="openInfoModal('location')" onkeydown="handleInfoCardKey(event,'location')">
+      <div class="info-label" data-en="Based in" data-ms="Lokasi">Lokasi</div>
+      <div class="info-val">Putrajaya, Malaysia</div>
+      <div class="info-hint" data-en="Open story" data-ms="Buka cerita">Buka cerita</div>
+    </div>
+    <div class="info-card" role="button" tabindex="0" onclick="openInfoModal('focus')" onkeydown="handleInfoCardKey(event,'focus')">
+      <div class="info-label" data-en="Focus" data-ms="Tumpuan">Tumpuan</div>
+      <div class="info-val">Web + AI / IoT</div>
+      <div class="info-hint" data-en="Open story" data-ms="Buka cerita">Buka cerita</div>
+    </div>
+    </div>
+  </div>
+
+  <div class="bio-card reveal legacy-bio-card" style="display:none;margin-top:12px;"
+    data-en="Passionate developer with a love for building web experiences and exploring the frontier of AI. I enjoy turning complex problems into clean, elegant solutions — whether it's crafting interactive UIs or training machine learning models."
+    data-ms="Seorang pembangun yang bersemangat dalam membina pengalaman web dan meneroka dunia kecerdasan buatan. Saya gemar menukar masalah yang kompleks kepada penyelesaian yang bersih dan elegan — sama ada dalam membina antara muka interaktif mahupun melatih model machine learning.">
+    Seorang pembangun yang bersemangat dalam membina pengalaman web dan meneroka dunia kecerdasan buatan. Saya gemar menukar masalah yang kompleks kepada penyelesaian yang bersih dan elegan — sama ada dalam membina antara muka interaktif mahupun melatih model machine learning.
+  </div>
+</section>
+
+<!-- ── SKILLS ── -->
+<section id="skills">
+  <div class="section-tag reveal" data-en="Technical Stack" data-ms="Kemahiran Teknikal">Kemahiran Teknikal</div>
+  <h2 class="section-title reveal" data-en="What I <span>Work With</span>" data-ms="Apa Yang Saya <span>Gunakan</span>">Apa Yang Saya <span>Gunakan</span></h2>
+  <p class="section-sub reveal"
+    data-en="A snapshot of the tools and technologies I use to build digital solutions."
+    data-ms="Gambaran ringkas tentang alat dan teknologi yang saya gunakan untuk membina penyelesaian digital.">
+    Gambaran ringkas tentang alat dan teknologi yang saya gunakan untuk membina penyelesaian digital.
+  </p>
+
+  <div class="skills-grid">
+    <!-- Developer -->
+    <div class="skill-cat-card reveal reveal-delay-1">
+      <div class="skill-cat-icon"><img class="skill-cat-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt=""></div>
+      <div class="skill-cat-title" data-en="Developer" data-ms="Pembangun">Pembangun</div>
+      <button class="skill-item" type="button" onclick="openSkillModal('html')">
+        <div class="skill-icon"><img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML5"></div>
+        <div><div class="skill-name">HTML5</div><div class="skill-desc" data-en="Page structure" data-ms="Struktur laman">Struktur laman</div></div>
+      </button>
+      <button class="skill-item" type="button" onclick="openSkillModal('css')">
+        <div class="skill-icon"><img src="https://cdn.simpleicons.org/css/663399" alt="CSS"></div>
+        <div><div class="skill-name">CSS3</div><div class="skill-desc" data-en="Layout & visual styling" data-ms="Susun atur & gaya visual">Susun atur & gaya visual</div></div>
+      </button>
+      <button class="skill-item" type="button" onclick="openSkillModal('javascript')">
+        <div class="skill-icon"><img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript"></div>
+        <div><div class="skill-name">JavaScript</div><div class="skill-desc" data-en="Interactive browser logic" data-ms="Logik interaktif web">Logik interaktif web</div></div>
+      </button>
+      <button class="skill-item" type="button" onclick="openSkillModal('vscode')">
+        <div class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="Visual Studio Code"></div>
+        <div><div class="skill-name">VS Code</div><div class="skill-desc" data-en="Main code editor" data-ms="Editor kod utama">Editor kod utama</div></div>
+      </button>
+      <button class="skill-item" type="button" onclick="openSkillModal('github')">
+        <div class="skill-icon"><img src="https://cdn.simpleicons.org/github/FFFFFF" alt="GitHub"></div>
+        <div><div class="skill-name">GitHub</div><div class="skill-desc" data-en="Code storage & versioning" data-ms="Simpan kod & versi">Simpan kod & versi</div></div>
+      </button>
+      <button class="skill-item" type="button" onclick="openSkillModal('supabase')">
+        <div class="skill-icon"><img src="https://cdn.simpleicons.org/supabase/3FCF8E" alt="Supabase"></div>
+        <div><div class="skill-name">Supabase</div><div class="skill-desc" data-en="Project data backend" data-ms="Backend data projek">Backend data projek</div></div>
+      </button>
+    </div>
+
+    <!-- AI / Data -->
+    <div class="skill-cat-card reveal reveal-delay-2">
+      <div class="skill-cat-icon"><img class="skill-cat-logo" src="https://cdn.simpleicons.org/python/3776AB" alt=""></div>
+      <div class="skill-cat-title">AI / Data</div>
+      <button class="skill-item" type="button" onclick="openSkillModal('python')">
+        <div class="skill-icon"><img src="https://cdn.simpleicons.org/python/3776AB" alt="Python"></div>
+        <div><div class="skill-name">Python</div><div class="skill-desc" data-en="Automation & data work" data-ms="Automasi & kerja data">Automasi & kerja data</div></div>
+      </button>
+      <button class="skill-item" type="button" onclick="openSkillModal('colab')">
+        <div class="skill-icon"><img src="https://cdn.simpleicons.org/googlecolab/F9AB00" alt="Google Colab"></div>
+        <div><div class="skill-name">Google Colab</div><div class="skill-desc" data-en="Notebook experiments" data-ms="Eksperimen notebook">Eksperimen notebook</div></div>
+      </button>
+      <button class="skill-item" type="button" onclick="openSkillModal('pandas')">
+        <div class="skill-icon"><img src="https://cdn.simpleicons.org/pandas/150458" alt="Pandas"></div>
+        <div><div class="skill-name">Pandas</div><div class="skill-desc" data-en="Cleaning & reading data" data-ms="Bersih & baca data">Bersih & baca data</div></div>
+      </button>
+      <button class="skill-item" type="button" onclick="openSkillModal('tensorflow')">
+        <div class="skill-icon"><img src="https://cdn.simpleicons.org/tensorflow/FF6F00" alt="TensorFlow"></div>
+        <div><div class="skill-name">TensorFlow</div><div class="skill-desc" data-en="Machine learning models" data-ms="Model machine learning">Model machine learning</div></div>
+      </button>
+    </div>
+
+    <!-- Maker / IoT -->
+    <div class="skill-cat-card reveal reveal-delay-3">
+      <div class="skill-cat-icon"><img class="skill-cat-logo" src="https://cdn.simpleicons.org/arduino/00878F" alt=""></div>
+      <div class="skill-cat-title" data-en="Maker / IoT" data-ms="Pembuat / IoT">Pembuat / IoT</div>
+      <button class="skill-item" type="button" onclick="openSkillModal('arduino')">
+        <div class="skill-icon"><img src="https://cdn.simpleicons.org/arduino/00878F" alt="Arduino"></div>
+        <div><div class="skill-name">Arduino IDE</div><div class="skill-desc" data-en="Upload code to boards" data-ms="Upload kod ke board">Upload kod ke board</div></div>
+      </button>
+      <button class="skill-item" type="button" onclick="openSkillModal('esp32')">
+        <div class="skill-icon"><img src="https://cdn.simpleicons.org/espressif/E7352C" alt="Espressif"></div>
+        <div><div class="skill-name">ESP32</div><div class="skill-desc" data-en="Wi-Fi microcontroller" data-ms="Mikropengawal Wi-Fi">Mikropengawal Wi-Fi</div></div>
+      </button>
+      <button class="skill-item" type="button" onclick="openSkillModal('blynk')">
+        <div class="skill-icon skill-blynk-logo">B</div>
+        <div><div class="skill-name">Blynk IoT</div><div class="skill-desc" data-en="Phone dashboard for IoT" data-ms="Dashboard IoT di telefon">Dashboard IoT di telefon</div></div>
+      </button>
+      <button class="skill-item" type="button" onclick="openSkillModal('iot')">
+        <div class="skill-icon skill-fallback">IO</div>
+        <div><div class="skill-name">IoT Sensors</div><div class="skill-desc" data-en="Read real-world data" data-ms="Baca data dunia sebenar">Baca data dunia sebenar</div></div>
+      </button>
+      <button class="skill-item" type="button" onclick="openSkillModal('circuit')">
+        <div class="skill-icon skill-fallback">PCB</div>
+        <div><div class="skill-name">Circuit Design</div><div class="skill-desc" data-en="Plan electronic wiring" data-ms="Rancang sambungan elektronik">Rancang sambungan elektronik</div></div>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ── PROJECTS ── -->
+<section id="projects">
+  <div class="section-tag reveal" data-en="My Work" data-ms="Hasil Kerja">Hasil Kerja</div>
+  <h2 class="section-title reveal" data-en="Featured <span>Projects</span>" data-ms="Projek <span>Terpilih</span>">Projek <span>Terpilih</span></h2>
+  <p class="section-sub reveal"
+    data-en="A collection of projects I've built — from IoT systems to web apps and AI solutions."
+    data-ms="Koleksi projek yang telah saya bina — dari sistem IoT hingga aplikasi web dan penyelesaian AI.">
+    Koleksi projek yang telah saya bina — dari sistem IoT hingga aplikasi web dan penyelesaian AI.
+  </p>
+
+  <div class="filter-row reveal">
+    <button class="filter-btn active" onclick="filterProjects('all',this)" data-en="All" data-ms="Semua">Semua</button>
+    <button class="filter-btn" onclick="filterProjects('web',this)">Web</button>
+    <button class="filter-btn" onclick="filterProjects('ai',this)">AI / Data</button>
+    <button class="filter-btn" onclick="filterProjects('iot',this)">IoT</button>
+    <button class="filter-btn" onclick="filterProjects('other',this)" data-en="Other" data-ms="Lain-lain">Lain-lain</button>
+  </div>
+  <input class="project-search reveal" id="projectSearch" type="search" placeholder="Cari projek..." data-ms-placeholder="Cari projek..." data-en-placeholder="Search projects..." aria-label="Cari projek" oninput="renderVisibleProjects()">
+  <div class="bento reveal" id="bento">
+    <div class="loading-state" data-en="Loading projects..." data-ms="Memuatkan projek...">Memuatkan projek...</div>
+  </div>
+</section>
+
+<!-- ── ACHIEVEMENTS ── -->
+<section id="achievements">
+  <div class="section-tag reveal" data-en="Background" data-ms="Latar Belakang">Latar Belakang</div>
+  <h2 class="section-title reveal" data-en="Education & <span>Achievements</span>" data-ms="Pendidikan & <span>Pencapaian</span>">Pendidikan & <span>Pencapaian</span></h2>
+
+  <!-- Timeline -->
+  <div class="timeline reveal">
+    <div class="timeline-item" role="button" tabindex="0" onclick="openEducationModal('skksi')" onkeydown="handleStoryCardKey(event,'education','skksi')">
+      <div class="tl-logo tl-logo-primary">
+        <img src="assets/logos/sk-sungai-kapar-indah.jpg" alt="Logo SK Sungai Kapar Indah" onerror="this.style.display='none'">
+        <span>SKSI</span>
+      </div>
+      <div class="tl-year">2014 – 2017</div>
+      <div class="tl-school">SK Sungai Kapar Indah</div>
+      <div class="tl-location">Klang, Selangor</div>
+      <div class="tl-badges"><span class="tl-badge" data-en="Primary School" data-ms="Sekolah Rendah">Sekolah Rendah</span></div>
+    </div>
+    <div class="timeline-item" role="button" tabindex="0" onclick="openEducationModal('skrp')" onkeydown="handleStoryCardKey(event,'education','skrp')">
+      <div class="tl-logo tl-logo-primary">
+        <img src="assets/logos/sk-rantau-panjang.png" alt="Logo SK Rantau Panjang" onerror="this.style.display='none'">
+        <span>SKRP</span>
+      </div>
+      <div class="tl-year">2018 – 2019</div>
+      <div class="tl-school">SK Rantau Panjang</div>
+      <div class="tl-location">Klang, Selangor</div>
+      <div class="tl-badges">
+        <span class="tl-badge" data-en="Primary School" data-ms="Sekolah Rendah">Sekolah Rendah</span>
+        <span class="tl-badge gold">UPSR: 2A 2B 2C</span>
+      </div>
+    </div>
+    <div class="timeline-item" role="button" tabindex="0" onclick="openEducationModal('smtk')" onkeydown="handleStoryCardKey(event,'education','smtk')">
+      <div class="tl-logo tl-logo-secondary">
+        <img src="assets/logos/smk-tinggi-klang.png" alt="Logo SMK Tinggi Klang" onerror="this.style.display='none'">
+        <span>SMTK</span>
+      </div>
+      <div class="tl-year">2020 – 2024</div>
+      <div class="tl-school">SMK Tinggi Klang</div>
+      <div class="tl-location">Klang, Selangor</div>
+      <div class="tl-badges">
+        <span class="tl-badge" data-en="Secondary School" data-ms="Sekolah Menengah">Sekolah Menengah</span>
+        <span class="tl-badge gold">SPM: 5A 1B 2C 1D</span>
+        <span class="tl-badge pink" data-en="Yayasan Selangor Scholar" data-ms="Biasiswa Yayasan Selangor">Biasiswa Yayasan Selangor</span>
+        <span class="tl-badge" data-en="Boarding School" data-ms="Pelajar Asrama">Pelajar Asrama</span>
+      </div>
+    </div>
+    <div class="timeline-item" role="button" tabindex="0" onclick="openEducationModal('kmj')" onkeydown="handleStoryCardKey(event,'education','kmj')">
+      <div class="tl-logo tl-logo-matric">
+        <img src="assets/logos/kmj.png" alt="Logo Kolej Matrikulasi Johor" onerror="this.style.display='none'">
+        <span>KMJ</span>
+      </div>
+      <div class="tl-year">2025 – 2026</div>
+      <div class="tl-school">Kolej Matrikulasi Johor</div>
+      <div class="tl-location">Johor, Malaysia</div>
+      <div class="tl-badges">
+        <span class="tl-badge" data-en="Matriculation" data-ms="Matrikulasi">Matrikulasi</span>
+        <span class="tl-badge gold">PNGA: 3.93</span>
+        <span class="tl-badge pink" data-en="Applying UKM FTSM 2026" data-ms="Memohon UKM FTSM 2026">Memohon UKM FTSM 2026</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Results -->
+  <div class="result-grid">
+    <div class="result-card reveal reveal-delay-1" role="button" tabindex="0" onclick="openEducationModal('upsr')" onkeydown="handleStoryCardKey(event,'education','upsr')">
+      <div class="result-label">UPSR</div>
+      <div class="result-val">2A2B2C</div>
+      <div class="result-sub">2019</div>
+    </div>
+    <div class="result-card reveal reveal-delay-2" role="button" tabindex="0" onclick="openEducationModal('spm')" onkeydown="handleStoryCardKey(event,'education','spm')">
+      <div class="result-label">SPM</div>
+      <div class="result-val">5A</div>
+      <div class="result-sub">2024 · 1B 2C 1D</div>
+    </div>
+    <div class="result-card reveal reveal-delay-3" role="button" tabindex="0" onclick="openEducationModal('pnga')" onkeydown="handleStoryCardKey(event,'education','pnga')">
+      <div class="result-label">PNGA</div>
+      <div class="result-val">3.93</div>
+      <div class="result-sub" data-en="Matriculation" data-ms="Matrikulasi">Matrikulasi</div>
+    </div>
+  </div>
+
+  <!-- Achievements -->
+  <div class="achieve-grid" style="margin-top:40px;">
+    <div class="achieve-card wide reveal" role="button" tabindex="0" onclick="openAchievementModal('exclusive')" onkeydown="handleStoryCardKey(event,'achievement','exclusive')">
+      <div class="achieve-icon">🏆</div>
+      <div class="achieve-title" data-en="Exclusive SPM Candidate" data-ms="Calon Eksklusif SPM">Calon Eksklusif SPM</div>
+      <div class="achieve-desc" data-en="Selected as an exclusive SPM candidate from SMK Tinggi Klang — an honour given to top-performing students." data-ms="Dipilih sebagai calon eksklusif SPM dari SMK Tinggi Klang — penghormatan yang diberikan kepada pelajar terbaik sekolah.">Dipilih sebagai calon eksklusif SPM dari SMK Tinggi Klang — penghormatan yang diberikan kepada pelajar terbaik sekolah.</div>
+      <span class="achieve-year">2024</span>
+    </div>
+    <div class="achieve-card reveal reveal-delay-1" role="button" tabindex="0" onclick="openAchievementModal('harapan')" onkeydown="handleStoryCardKey(event,'achievement','harapan')">
+      <div class="achieve-icon">⭐</div>
+      <div class="achieve-title" data-en="Harapan Student (Form 3–5)" data-ms="Pelajar Harapan (T3–5)">Pelajar Harapan (T3–5)</div>
+      <div class="achieve-desc" data-en="Consecutively awarded Harapan Student from Form 3 to Form 5 at AYSK." data-ms="Dianugerahkan Pelajar Harapan berturut-turut dari T3 hingga T5 di AYSK.">Dianugerahkan Pelajar Harapan berturut-turut dari T3 hingga T5 di AYSK.</div>
+      <span class="achieve-year">2022 – 2024</span>
+    </div>
+    <div class="achieve-card reveal reveal-delay-2" role="button" tabindex="0" onclick="openAchievementModal('excellent')" onkeydown="handleStoryCardKey(event,'achievement','excellent')">
+      <div class="achieve-icon">🎖️</div>
+      <div class="achieve-title" data-en="Excellent SPM Student" data-ms="Pelajar Cemerlang SPM">Pelajar Cemerlang SPM</div>
+      <div class="achieve-desc" data-en="Recognised as Excellent SPM Student 2024/2025." data-ms="Diiktiraf sebagai Pelajar Cemerlang SPM 2024/2025.">Diiktiraf sebagai Pelajar Cemerlang SPM 2024/2025.</div>
+      <span class="achieve-year">2025</span>
+    </div>
+    <div class="achieve-card wide reveal" role="button" tabindex="0" onclick="openAchievementModal('scholarship')" onkeydown="handleStoryCardKey(event,'achievement','scholarship')">
+      <div class="achieve-icon">💰</div>
+      <div class="achieve-title" data-en="Yayasan Selangor Scholarship" data-ms="Biasiswa Yayasan Selangor">Biasiswa Yayasan Selangor</div>
+      <div class="achieve-desc" data-en="Recipient of Yayasan Selangor scholarship worth RM1,000 per year for academic excellence." data-ms="Penerima biasiswa Yayasan Selangor bernilai RM1,000 setahun atas kecemerlangan akademik.">Penerima biasiswa Yayasan Selangor bernilai RM1,000 setahun atas kecemerlangan akademik.</div>
+      <span class="achieve-year">2020 – 2024</span>
+    </div>
+  </div>
+
+  <!-- Evidence -->
+  <div class="evidence-panel reveal">
+    <div class="evidence-panel-head">
+      <div>
+        <div class="evidence-kicker" data-en="Evidence" data-ms="Bukti">Bukti</div>
+        <h3 data-en="Selected certificate proof" data-ms="Sijil pilihan sebagai bukti">Sijil pilihan sebagai bukti</h3>
+        <p
+          data-en="A compact proof area for relevant certificates only. The full archive stays tucked away."
+          data-ms="Ruang bukti ringkas untuk sijil yang relevan sahaja. Arkib penuh disimpan dalam paparan berasingan.">
+          Ruang bukti ringkas untuk sijil yang relevan sahaja. Arkib penuh disimpan dalam paparan berasingan.
+        </p>
+      </div>
+    </div>
+    <div class="cert-gallery evidence-gallery" id="certGallery">
+      <div style="grid-column:1/-1;text-align:center;padding:40px;color:var(--muted);" data-en="Loading certificates..." data-ms="Memuatkan sijil...">Memuatkan sijil...</div>
+    </div>
+    <div class="cert-gallery-actions" id="certGalleryActions"></div>
+  </div>
+</section>
+
+<!-- ── RESUME ── -->
+<section id="resume">
+  <div class="resume-layout">
+    <div class="resume-stack reveal">
+      <article class="resume-section-card">
+        <div class="resume-section-heading">
+          <span class="resume-section-icon" aria-hidden="true">🎓</span>
+          <h2 data-en="Education" data-ms="Pendidikan">Pendidikan</h2>
+        </div>
+        <div class="resume-entry-list">
+          <a class="resume-entry" href="#achievements">
+            <span class="resume-entry-arrow" aria-hidden="true">↗</span>
+            <strong>Kolej Matrikulasi Johor</strong>
+            <span data-en="Computer Science · PNGA 3.93" data-ms="Sains Komputer · PNGA 3.93">Sains Komputer · PNGA 3.93</span>
+            <small>2025 - 2026</small>
+          </a>
+          <a class="resume-entry resume-entry-active" href="#achievements">
+            <span class="resume-entry-arrow" aria-hidden="true">↗</span>
+            <strong>SMK Tinggi Klang</strong>
+            <span>SPM - 5A 1B 2C 1D</span>
+            <small>2020 - 2024</small>
+          </a>
+        </div>
+      </article>
+
+      <article class="resume-section-card">
+        <div class="resume-section-heading">
+          <span class="resume-section-icon" aria-hidden="true">💼</span>
+          <h2 data-en="Experience" data-ms="Pengalaman">Pengalaman</h2>
+        </div>
+        <div class="resume-entry-list">
+          <a class="resume-entry" href="#projects">
+            <span class="resume-entry-arrow" aria-hidden="true">↗</span>
+            <strong data-en="Personal Portfolio Website" data-ms="Laman Portfolio Peribadi">Laman Portfolio Peribadi</strong>
+            <span data-en="Built and maintained a bilingual portfolio with project showcase, certificate gallery and contact workflow."
+              data-ms="Membina dan mengemas kini portfolio dwibahasa dengan paparan projek, galeri sijil dan aliran hubungi.">
+              Membina dan mengemas kini portfolio dwibahasa dengan paparan projek, galeri sijil dan aliran hubungi.
+            </span>
+            <small>2026</small>
+          </a>
+          <a class="resume-entry" href="#projects">
+            <span class="resume-entry-arrow" aria-hidden="true">↗</span>
+            <strong data-en="Learning Projects - Web, AI & IoT" data-ms="Projek Pembelajaran - Web, AI & IoT">Projek Pembelajaran - Web, AI & IoT</strong>
+            <span data-en="Explored small technical builds while learning frontend development, data tools and microcontroller basics."
+              data-ms="Meneroka binaan teknikal kecil semasa belajar frontend development, alat data dan asas mikropengawal.">
+              Meneroka binaan teknikal kecil semasa belajar frontend development, alat data dan asas mikropengawal.
+            </span>
+            <small>2024 - 2026</small>
+          </a>
+        </div>
+      </article>
+    </div>
+
+    <aside class="resume-preview-panel reveal reveal-delay-1">
+      <div class="resume-pdf-shell">
+        <iframe id="resumePreview" title="Resume PDF preview"></iframe>
+        <div class="resume-preview-placeholder" id="resumePreviewPlaceholder">
+          <span>PDF</span>
+          <strong data-en="Resume preview will appear here" data-ms="Preview resume akan muncul di sini">Preview resume akan muncul di sini</strong>
+          <small data-en="Upload your CV link in admin settings to enable this panel."
+            data-ms="Masukkan link CV di tetapan admin untuk aktifkan panel ini.">
+            Masukkan link CV di tetapan admin untuk aktifkan panel ini.
+          </small>
+        </div>
+      </div>
+
+      <div class="resume-preview-copy">
+        <h2>bambam</h2>
+        <p data-en="My complete resume is available for download, covering my education, experience, skills and achievements."
+          data-ms="Resume lengkap saya tersedia untuk dimuat turun, merangkumi pendidikan, pengalaman, kemahiran dan pencapaian saya.">
+          Resume lengkap saya tersedia untuk dimuat turun, merangkumi pendidikan, pengalaman, kemahiran dan pencapaian saya.
+        </p>
+        <div class="resume-info-grid">
+          <div>
+            <span class="resume-info-label" data-en="Name" data-ms="Nama">Nama</span>
+            <strong>Irham Nursyafizan</strong>
+          </div>
+          <div>
+            <span class="resume-info-label" data-en="Role" data-ms="Peranan">Peranan</span>
+            <strong data-en="Student Developer" data-ms="Pelajar Pembangun">Pelajar Pembangun</strong>
+          </div>
+          <div>
+            <span class="resume-info-label" data-en="Location" data-ms="Lokasi">Lokasi</span>
+            <strong>Putrajaya, Malaysia</strong>
+          </div>
+          <div>
+            <span class="resume-info-label" data-en="Status" data-ms="Status">Status</span>
+            <strong class="resume-status" data-en="Available" data-ms="Tersedia">Tersedia</strong>
+          </div>
+        </div>
+        <div class="resume-btns">
+          <a class="btn-primary" id="resumeBtn" href="#" target="_blank" rel="noopener" data-en="↓ Download PDF" data-ms="↓ Muat Turun PDF" style="display:none;">↓ Muat Turun PDF</a>
+          <a class="btn-ghost resume-open-btn" id="resumeOpenBtn" href="#" target="_blank" rel="noopener" data-en="Open Resume" data-ms="Buka Resume" style="display:none;">Buka Resume</a>
+          <a class="btn-ghost resume-contact-btn" href="#contact" data-en="Get in Touch" data-ms="Hubungi Saya">Hubungi Saya</a>
+        </div>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- ── CONTACT ── -->
+<section id="contact">
+  <div class="section-tag reveal" data-en="Get in Touch" data-ms="Hubungi Saya">Hubungi Saya</div>
+  <h2 class="section-title reveal" data-en="Let's <span>Connect</span>" data-ms="Jom <span>Berhubung</span>">Jom <span>Berhubung</span></h2>
+  <p class="section-sub reveal"
+    data-en="Feel free to reach out — always happy to connect with fellow tech enthusiasts."
+    data-ms="Jangan segan untuk menghubungi saya — sentiasa gembira untuk berhubung dengan rakan-rakan yang berminat dalam teknologi.">
+    Jangan segan untuk menghubungi saya.
+  </p>
+  <div class="availability-note reveal">
+    <span class="availability-dot" aria-hidden="true"></span>
+    <strong data-en="Open for collaborations, student projects, and learning opportunities."
+      data-ms="Terbuka untuk kolaborasi, projek pelajar, dan peluang pembelajaran.">
+      Terbuka untuk kolaborasi, projek pelajar, dan peluang pembelajaran.
+    </strong>
+  </div>
+
+  <div class="contact-grid">
+    <div class="contact-cards reveal">
+      <a href="mailto:irhamnursyafizan@gmail.com" class="ccard">
+        <div class="ccard-icon"><img src="https://cdn.simpleicons.org/gmail/EA4335" alt="Email"></div>
+        <div><div class="ccard-label" data-en="Email" data-ms="E-mel">E-mel</div><div class="ccard-val">irhamnursyafizan@gmail.com</div></div>
+      </a>
+      <a href="https://wa.me/60179780878" class="ccard" target="_blank" rel="noopener">
+        <div class="ccard-icon"><img src="https://cdn.simpleicons.org/whatsapp/25D366" alt="WhatsApp"></div>
+        <div><div class="ccard-label">WhatsApp</div><div class="ccard-val">+6017-9780878</div></div>
+      </a>
+      <a href="https://instagram.com/bambamswift" class="ccard" target="_blank" rel="noopener">
+        <div class="ccard-icon"><img src="https://cdn.simpleicons.org/instagram/E4405F" alt="Instagram"></div>
+        <div><div class="ccard-label">Instagram</div><div class="ccard-val">@bambamswift</div></div>
+      </a>
+      <a href="https://facebook.com/Irham.Nursyafizan" class="ccard" target="_blank" rel="noopener">
+        <div class="ccard-icon"><img src="https://cdn.simpleicons.org/facebook/1877F2" alt="Facebook"></div>
+        <div><div class="ccard-label">Facebook</div><div class="ccard-val">Irham Nursyafizan</div></div>
+      </a>
+      <a href="https://github.com/bambam0711" class="ccard" target="_blank" rel="noopener">
+        <div class="ccard-icon"><img src="https://cdn.simpleicons.org/github/FFFFFF" alt="GitHub"></div>
+        <div><div class="ccard-label">GitHub</div><div class="ccard-val">github.com/bambam0711</div></div>
+      </a>
+      <a href="https://www.linkedin.com/in/irham-nursyafizan-41bb5740a/" class="ccard" target="_blank" rel="noopener">
+        <div class="ccard-icon brand-linkedin" aria-hidden="true">in</div>
+        <div><div class="ccard-label">LinkedIn</div><div class="ccard-val">irham-nursyafizan</div></div>
+      </a>
+    </div>
+
+    <div class="contact-form reveal reveal-delay-1">
+      <div class="form-success" id="formSuccess">
+        <div class="form-success-icon">✅</div>
+        <div data-en="Message sent! I'll get back to you soon." data-ms="Mesej berjaya dihantar! Saya akan balas secepat mungkin.">Mesej berjaya dihantar! Saya akan balas secepat mungkin.</div>
+      </div>
+      <div id="formContainer">
+        <div class="form-group">
+          <label class="form-label" data-en="Your Name" data-ms="Nama Anda">Nama Anda</label>
+          <input class="form-input" type="text" id="formName" placeholder="Masukkan nama anda..." data-ms-placeholder="Masukkan nama anda..." data-en-placeholder="Enter your name...">
+        </div>
+        <div class="form-group">
+          <label class="form-label" data-en="Your Email" data-ms="E-mel Anda">E-mel Anda</label>
+          <input class="form-input" type="email" id="formEmail" placeholder="nama@email.com" data-ms-placeholder="nama@email.com" data-en-placeholder="name@email.com">
+        </div>
+        <div class="form-group">
+          <label class="form-label" data-en="Message" data-ms="Mesej">Mesej</label>
+          <textarea class="form-textarea" id="formMessage" placeholder="Tulis mesej anda di sini..." data-ms-placeholder="Tulis mesej anda di sini..." data-en-placeholder="Write your message here..."></textarea>
+        </div>
+        <button class="form-submit" id="formSubmit" onclick="submitForm()">
+          <span data-en="Send Message ✉️" data-ms="Hantar Mesej ✉️">Hantar Mesej ✉️</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer class="site-footer">
+  <div class="footer-copy" id="footerTrigger" onclick="handleFooterClick()">© 2026 bambam.dev — Irham Nursyafizan</div>
+</footer>
+
+<!-- ── MODAL ── -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModal(event)">
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" onclick="closeModalDirect()" aria-label="Close modal">&#x2715;</button>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<!-- ── LIGHTBOX ── -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <span class="lightbox-close">&#x2715;</span>
+  <img id="lightboxImg" src="" alt="gambar">
+</div>
+
+<div class="toast" id="siteToast"></div>
+
+<!-- ── SCROLL TO TOP ── -->
+<button id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Scroll to top">↑</button>
+
+<script src="chatbot.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
