@@ -38,8 +38,8 @@
       answer: 'Antara pencapaian saya: <b>Calon Eksklusif SPM</b>, <b>Pelajar Harapan</b> dari Tingkatan 3 hingga 5, <b>Pelajar Cemerlang SPM</b>, dan <b>Biasiswa Yayasan Selangor</b>. Boleh buka <a href="#achievements" style="color:#7c6aff">bahagian Pencapaian</a> untuk sijil dan cerita ringkas.'
     },
     {
-      keywords: ['contact', 'hubungi', 'email', 'whatsapp', 'instagram', 'facebook', 'reach', 'linkedin', 'github'],
-      answer: 'Boleh hubungi saya melalui:<br><b>Email:</b> irhamnursyafizan@gmail.com<br><b>WhatsApp:</b> +6017-9780878<br><b>Instagram:</b> @bambamswift<br><b>GitHub:</b> github.com/bambam0711<br><b>LinkedIn:</b> irham-nursyafizan<br>Atau terus ke <a href="#contact" style="color:#7c6aff">bahagian Hubungi</a>.'
+      keywords: ['contact', 'hubungi', 'email', 'instagram', 'reach', 'linkedin', 'github'],
+      answer: 'Boleh hubungi saya melalui:<br><b>Email:</b> irhamnursyafizan@gmail.com<br><b>Instagram:</b> @bambamswift<br><b>GitHub:</b> github.com/bambam0711<br><b>LinkedIn:</b> irham-nursyafizan<br>Atau terus ke <a href="#contact" style="color:#7c6aff">bahagian Hubungi</a>.'
     },
     {
       keywords: ['ukm', 'universiti', 'university', 'degree', 'course', 'program', 'ftsm'],
